@@ -8,13 +8,21 @@
         <servlet-name>GoogleSigninServlet</servlet-name>
         <servlet-class>com.mycompany.doca_java.Controller.loginSignup.GoogleSigninServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>TestServlet</servlet-name>
+        <servlet-class>com.mycompany.TestServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>DispatchServlet</servlet-name>
         <url-pattern>/DispatchServlet</url-pattern>
     </servlet-mapping>
-     <servlet-mapping>
+    <servlet-mapping>
         <servlet-name>GoogleSigninServlet</servlet-name>
         <url-pattern>/GoogleSigninServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TestServlet</servlet-name>
+        <url-pattern>/TestServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
